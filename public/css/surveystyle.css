@@ -1,0 +1,112 @@
+body {
+	background-image: url(https://cdn.mobilesyrup.com/wp-content/uploads/2015/06/final-fantasy-tactics-game-hd-wallpaper-1920x1200-4926.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left;
+	display: fixed;
+}
+
+#title {
+	font-size: 70px;
+	font-weight: bold;
+	text-align: center;
+	font-family: san-serif;
+	padding: 0.3em 0em 0.3em 0em;
+	margin: 0px;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+    1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+#survey-form {	
+	font-family: "Arial", san-serif;
+	font-size: 18px;
+	padding: 25px;
+	background-repeat: no-repeat;
+	background-size: auto;
+	text-align: center;
+}
+
+.container {
+	border: 1px solid black;
+	max-width: 10in;
+	font-size: 10px;
+	font-family: Arial;
+	text-align: center;
+	background: rgba(204, 204, 204, 0.8);
+	margin: auto;
+	padding: 1px 1px 1px 1px;
+}
+
+#description {
+	font-size: 20px;
+	font-family: monospace;
+	font-weight: bold;
+	border: px solid black;
+}
+
+#name-field, #email-field, #age, #dropdown, #radio-buttons, #checkboxes, #comments, #textarea {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 10px;
+	padding: 0px 0px 10px 0px
+}
+
+#name-label, #email-label, #number-label, #role-label, #radiolist-label, #checklist-label, #comments-label, #textarea-label {
+	width: 100%;
+	text-align: left;
+	padding: 4px 0px 0px 0px;
+  font-weight: bold;
+}
+
+input[name="name"], input[name="email"], input[name="age"], textarea[name="textarea"] {
+	width: 100%;
+	max-width: 90%;
+	padding: 4px;
+  outline: none;
+  border-radius: 5px;
+}
+
+select {
+	width: 47%;
+	padding: 4px;
+}
+
+p {
+	margin: 0px 0px 5px 0px;
+}
+
+.button {
+	background-color: skyblue;
+	padding: 8px 16px 8px 16px;
+	border-radius: 2px;
+	border: none;
+	font-size: 30px;
+	color: white;
+}
+.button:hover {
+  background-color: grey;
+  text-color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+	#name-field, #email-field, #age, #dropdown, #radio-buttons, #checkboxes, #comments, #textarea {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	#name-label, #email-label, #number-label, #role-label, #radiolist-label, #checklist-label, #comments-label, #textarea-label {
+		width: 100%;
+		text-align: left;
+		padding: 4px 0px 0px 0px;
+	}
+	input[name="name"], input[name="email"], input[name="age"], textarea[name="textarea"] {
+		width: 90%;
+		padding: 4px;
+	}
+	select {
+		width: 50%;
+		padding: 4px;
+	}
+	p {
+		margin: 0px 0px 18px 0px;
+	}
